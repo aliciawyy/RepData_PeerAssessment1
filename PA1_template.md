@@ -100,7 +100,7 @@ The **mean** and **median** total number of steps taken per day are respectively
 We notice that these values are different from the estimates of the first part with missing values. Imputing the missing data on the estimates makes the distribution less skewed and more centered.
 
 ## Are there differences in activity patterns between weekdays and weekends?
-The activity during the weekdays and the weekend are as following
+The activities during the weekdays and the weekend are as following
 
 
 ```r
@@ -119,6 +119,6 @@ xyplot(val ~ interval | wk, data = dd, type = "l", ylab = "Number of steps",
 
 ![plot of chunk unnamed-chunk-9](figure/unnamed-chunk-9.png) 
 
-We note that the activity of the users spread all along the day during the weekend while during the work days, there is not so much movement.
+We note that the activity of the users spread all along the day during the weekend while during the work days, they are much quiter during the working hours.
 
 
