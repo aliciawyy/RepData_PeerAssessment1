@@ -28,8 +28,8 @@ qplot(tstep, geom = "histogram", binwidth = 1000, xlim = c(0,23000)) +
     xlab("Total number of steps taken each day") + ylab("Count")
 ```
 The **mean** and **median** total number of steps taken per day are respectively 
-* mean = `r mean(tstep)` 
-* median = `r median(tstep)`
+* mean = `median(tstep)` `r mean(tstep)` 
+* median = `median(tstep)` `r median(tstep)`
 
 ## What is the average daily activity pattern?
 ```{r, fig.height = 5.5}
@@ -61,8 +61,8 @@ qplot(ntstep, geom = "histogram", binwidth = 1000, xlim = c(0,23000)) +
 ```
 
 The **mean** and **median** total number of steps taken per day are respectively 
-* mean = `r mean(ntstep)` 
-* median = `r median(ntstep)`
+* mean =`mean(ntstep)` `r mean(ntstep)` 
+* median = `median(ntstep)` `r median(ntstep)`
 
 We notice that these values are different from the estimates of the first part with missing values. Imputing the missing data on the estimates makes the distribution less skewed and more centered.
 

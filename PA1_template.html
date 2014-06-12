@@ -221,8 +221,8 @@ qplot(tstep, geom = &quot;histogram&quot;, binwidth = 1000, xlim = c(0, 23000)) 
 <p>The <strong>mean</strong> and <strong>median</strong> total number of steps taken per day are respectively </p>
 
 <ul>
-<li>mean = 9354.2295 </li>
-<li>median = 1.0395 &times; 10<sup>4</sup></li>
+<li>mean = <code>median(tstep)</code> 9354.2295 </li>
+<li>median = <code>median(tstep)</code> 1.0395 &times; 10<sup>4</sup></li>
 </ul>
 
 <h2>What is the average daily activity pattern?</h2>
@@ -267,8 +267,8 @@ qplot(ntstep, geom = &quot;histogram&quot;, binwidth = 1000, xlim = c(0, 23000))
 <p>The <strong>mean</strong> and <strong>median</strong> total number of steps taken per day are respectively </p>
 
 <ul>
-<li>mean = 1.0766 &times; 10<sup>4</sup> </li>
-<li>median = 1.0766 &times; 10<sup>4</sup></li>
+<li>mean =<code>mean(ntstep)</code> 1.0766 &times; 10<sup>4</sup> </li>
+<li>median = <code>median(ntstep)</code> 1.0766 &times; 10<sup>4</sup></li>
 </ul>
 
 <p>We notice that these values are different from the estimates of the first part with missing values. Imputing the missing data on the estimates makes the distribution less skewed and more centered.</p>
